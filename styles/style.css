@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Agdasima';
+    src: url(font/Agdasima.ttf);
+}
+
+
+body{
+    margin: 0;
+}
+
+p, h1, h5{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Agdasima';
+}
+
+h5{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #0645a0;
+}
+
+a:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+
+/* Gestione dei DIV nella pagina principale*/
+#pagina_principale{
+    display: flex;
+    overflow: hidden; /* Previene l'overflow a destra */
+}
+
+/*Barra di navigazione laterale e tutto il css connesso*/
+#blocco_menu_navigazione_laterale{
+    width: 10%;
+    height: auto;
+    padding: 0.5%;
+}
+
+#blocco_menu_navigazione_laterale hr{
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#blocco_menu_navigazione_laterale p{
+    margin-left: 13%; /* Rimuove il margine sinistro */
+}
+
+#logo_img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.5));
+}
+
+#titolo_wiki{
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: 'Agdasima';
+    font-size: 140%;
+}
+
+#menu_navigazione_laterale{
+    margin-top: 6%;
+    margin-left: 13%; /* Rimuove il margine sinistro */
+    padding-left: 0; /* Rimuove il padding sinistro */
+    list-style-type: none; /* Opzionale: rimuove i puntini dell'elenco */
+}
+
+#menu_navigazione_laterale li{
+    margin-bottom: 10%; /* Spazio di 10px tra ogni elemento */
+}
+
+
+
+
+/*Div centrale della Pagina Principale*/
+#blocco_centrale_pagina_principale{
+    width: 100%;
+    padding-bottom: 1000px; /* Spazio interno inferiore molto grande */
+    background-color: #b6c0cf3b;
+}
+
+#blocco-benvenuto-centrale-pagina-principale{
+    padding: 1%;
+    border: solid #0645a0 0.1em;
+    margin: 5% 20% 0 2%;
+    border-radius: 15px;
+    width: auto;
+}
+
+#ultimo-wiki-pubblicato-pagina-principale{
+    padding: 1%;
+    border: solid #0645a0 0.1em;
+    margin: 1% 70% 0 2%;
+    border-radius: 15px;
+    width: auto;
+}
+
+#fai-una-ricerca {
+    display: flex; /* Rende il contenitore flessibile */
+    align-items: center; /* Centra verticalmente gli elementi */
+    margin-right: auto; /* Spinge la barra di ricerca a sinistra */
+}
+
+#fai-una-ricerca input[type="text"] {
+    padding: 10px; /* Spaziatura interna */
+    border: 1px solid #0645a0; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    font-size: 16px; /* Dimensione del testo */
+    width: 250px; /* Larghezza della barra di ricerca */
+    margin-right: 5px; /* Spazio tra input e bottone */
+}
+
+#fai-una-ricerca button {
+    background-color: #0645a0; /* Colore di sfondo */
+    border: none; /* Nessun bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra */
+    padding: 10px; /* Spaziatura interna */
+}
+
+#fai-una-ricerca button img {
+    width: 20px; /* Dimensione dell'icona di ricerca */
+    height: auto; /* Mantiene le proporzioni */
+}
+
+#fai-una-ricerca button:hover {
+    background-color: #0c66c2; /* Colore di sfondo al passaggio del mouse */
+}
+
+
+
+
+/* Stile per una pagina classica*/
+#titolo-pagina-wiki{
+    display: flex;           
+    justify-content: space-between; /* Distribuisce lo spazio tra i contenuti */
+    align-items: center;       /* Centra verticalmente gli elementi */
+    width: 100%; /* Assicura che il div occupi tutto lo spazio disponibile */
+
+}
+
+#accesso-link-pagina-da-qualsiasi{
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Spinge a destra */
+    padding: 0; /* Rimuovi padding se presente */
+    margin: 0; /* Rimuovi margine se presente */
+}
+
+
+#accesso-link-pagina-da-qualsiasi p {
+    display: flex; /* Rende il paragrafo un contenitore flessibile */
+    align-items: center; /* Centra verticalmente l'icona e il testo */
+    gap: 4%; /* Spazio tra l'icona e il testo */
+    margin: 0; /* Rimuove il margine predefinito del paragrafo */
+    width: 100%;
+}
+
+#titolo-pagina-wiki h1{
+    padding: 0.8%;
+    font-weight: normal;
+    font-size: 280%;
+}
+
+#contenuto-pagina-wiki{
+    display: flex;
+    padding: 1.3%;
+    line-height: 1.3; /* Spaziatura nell'altezza del paragrafo del contenuto */
+}
+
+#immagine-principale-contenuto{
+    border: solid gray 0.1em;
+    padding: 0.5%;
+    text-align: center;
+    margin-top: 0;
+}
